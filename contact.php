@@ -45,8 +45,7 @@ $headers = "From: $email_from \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
-// header('Location: thankyou.html');
-echo "<h4>We will contact you soon!!</h4>";
+header('Location: thankyou.html');
 
 
 // Function to validate against any email injection attempts
